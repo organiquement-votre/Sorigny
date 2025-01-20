@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { postsCBD as initialPosts } from './nouveauxCBD';
 import Swal from 'sweetalert2';
-
+import "../App.css"
 const CBD = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
 
-  const categories = ['all', ...new Set(initialPosts.map(post => post.category))];
+  const categories = [...new Set(initialPosts.map(post => post.category))];
 
   const filteredPosts = selectedCategory === 'all'
     ? initialPosts
@@ -47,18 +47,33 @@ const CBD = () => {
     <div className="max-w-4xl mx-auto px-4 py-8 mt-12">
       <h1 className="text-3xl font-bold mb-8">Nos produits CBD</h1>
 
-      <div className="flex gap-4 mb-8">
+      {/* Bouton "Tous les produits" séparé */}
+      <div className="mb-4">
+        <button
+          onClick={() => setSelectedCategory('all')}
+          className={`px-4 py-2 rounded-full transition-colors ${
+            selectedCategory === 'all'
+              ? 'bg-green-600 text-white font-semibold'
+              : 'bg-gray-200 hover:bg-gray-300 font-semibold'
+          }`}
+        >
+          Tous les produits
+        </button>
+      </div>
+
+      {/* Section des filtres pour les autres catégories */}
+      <div className="grid grid-cols-2 md:flex md:flex-row gap-4 mb-8">
         {categories.map(category => (
           <button
             key={category}
             onClick={() => setSelectedCategory(category)}
             className={`px-4 py-2 rounded-full transition-colors ${
               selectedCategory === category
-                ? 'bg-green-600 text-white'
-                : 'bg-gray-200 hover:bg-gray-300'
+                ? 'bg-green-600 text-white font-semibold'
+                : 'bg-gray-200 hover:bg-gray-300 font-semibold'
             }`}
           >
-            {category === 'all' ? 'Tous les produits' : category}
+            {category}
           </button>
         ))}
       </div>
@@ -70,15 +85,17 @@ const CBD = () => {
               <img 
                 src={post.image} 
                 alt={post.title} 
-                className="w-full h-64 object-contain"
+                className="w-full h-64 object-contain mb-1"
               />
-              <span className="absolute top-72 right-2 bg-green-600 text-white px-3 py-1 rounded-full text-sm">
+              <span className="absolute top-72 right-2 bg-green-600 text-white px-3 py-1 rounded-full text-sm ">
                 {post.category}
               </span>
             </div>
             
             <div className="p-6">
-              <h2 className="text-2xl font-bold mb-2">{post.title}</h2>
+              <h2 className="text-2xl font-bold mb-2 title-small"> {/* Ajout de la classe personnalisée */}
+                {post.title}
+              </h2>
               <p className="text-gray-600 text-sm mb-4">
                 {new Date(post.date).toLocaleDateString('fr-FR', {
                   year: 'numeric',

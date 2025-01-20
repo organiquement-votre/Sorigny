@@ -51,7 +51,7 @@ const RSVP = ({ showOnlyForm = false }) => {
     return (
         <>
           
-            <div className="relative min-h-screen">
+            <div className="relative min-h-screen bg-gray-100">
                 {/* <div 
                     className="fixed inset-0 w-full h-full pointer-events-none -z-10 opacity-100"
                     style={{
@@ -63,7 +63,7 @@ const RSVP = ({ showOnlyForm = false }) => {
                     aria-hidden="true"
                 /> */}
 
-                <div className={`contact-form-section ${showOnlyForm ? '' : 'min-h-screen'} mt-8 sm:mt-8`}>
+                <div className={`contact-form-section ${showOnlyForm ? '' : 'min-h-screen'} mt-8 sm:mt-8 `}>
                     <Formik
                         initialValues={{ name: '', email: '', message: '' }}
                         validationSchema={validationSchema}
@@ -74,7 +74,7 @@ const RSVP = ({ showOnlyForm = false }) => {
                                 <div className="Form w-full max-w-2xl bg-white/50 rounded-xl sm:rounded-2xl shadow-xl p-4 sm:p-8 mx-auto">
                                     <div className="text-center mb-6 sm:mb-8">
                                         <h2 id='contacts' className='text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800 mb-3 sm:mb-4'>
-                                            Répondez SVP !
+                                            Ecrivez moi !
                                         </h2>
                                         <p className='text-sm sm:text-base lg:text-lg text-gray-800 max-w-md mx-auto px-2'>
                                             Des questions, une envie, ou une commande ? Envoyez moi un mail pour que je vous réponde.

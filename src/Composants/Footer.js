@@ -5,11 +5,11 @@ import { FaMapMarkerAlt } from 'react-icons/fa';
 
 export function FooterComponent() {
   return (
-    <Footer container className="bg-white shadow-inner">
+    <Footer container className="bg-gray-100 shadow-inner">
       <div className="w-full">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Première colonne - Logo */}
-          <div className="flex justify-center md:justify-start ml-24 mt-8">
+          <div className="flex justify-center md:justify-start ml-4 mt-8">
             <Footer.Brand
               as={Link}
               to="/"
