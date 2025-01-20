@@ -22,7 +22,7 @@ function Header() {
                     className="relative"
                 >
                     <img 
-                        src="/images/Logo.jpg" 
+                        src={`${process.env.PUBLIC_URL}/images/Logo.jpg`} 
                         alt="Organiquement Votre Sorigny" 
                         className="h-8 w-8 rounded-full object-cover hover:opacity-80 transition-opacity"
                     />

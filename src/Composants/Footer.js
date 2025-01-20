@@ -13,7 +13,7 @@ export function FooterComponent() {
             <Footer.Brand
               as={Link}
               to="/"
-              src="/images/Logo.jpg"
+              src={`${process.env.PUBLIC_URL}/images/Logo.jpg`} 
               alt="Organiquement Votre Sorigny Logo"
               name="Organiquement Votre Sorigny"
               className="flex items-center"

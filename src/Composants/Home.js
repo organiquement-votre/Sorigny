@@ -5,15 +5,15 @@ import Carousel from './Carousel.js';
 const Home = () => {
   const slides = [
     {
-      image: '/images/Magasin.jpg',
+      image: process.env.PUBLIC_URL + '/images/Magasin.jpg',
       title: 'Organiquement Votre Sorigny',
       description: 'Lieu Dit "Le Goret", Sorigny, 09 70 16 32 55'
     },
     {
-      image: '/images/Spritiueux.jpg',
+      image: process.env.PUBLIC_URL +'/images/Spritiueux.jpg',
     },
     {
-      image: '/images/Cosmétiques.jpg',
+      image: process.env.PUBLIC_URL +'/images/Cosmétiques.jpg',
     }
   ];
 

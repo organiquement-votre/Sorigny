@@ -1,0 +1,42 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Ajout des permissions
+    
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '20'
+          
+      - name: Clean Install
+        run: |
+          rm -rf node_modules package-lock.json
+          npm install
+          npm install --save-dev @babel/plugin-proposal-private-property-in-object
+        
+      - name: Build
+        env:
+          REACT_APP_WEB3FORMS_KEY: ${{ secrets.REACT_APP_WEB3FORMS_KEY }}
+          CI: false
+        run: npm run build
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
+          publish_branch: gh-pages
+          force_orphan: true
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'

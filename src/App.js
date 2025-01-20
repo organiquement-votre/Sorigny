@@ -10,7 +10,7 @@ import CGV from './Composants/CGV.js';
 import MentionsLegales from './Composants/MentionsLegales.js';
 function App() {
   return (
-    <Router>
+    <Router basename='/Organiquement-Votre-Sorigny'>
       <div className="flex flex-col min-h-screen">
         <Navbar />
         <main className="flex-grow">

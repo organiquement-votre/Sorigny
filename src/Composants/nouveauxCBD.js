@@ -9,7 +9,7 @@ export const postsCBD = [
       <br><br/>
       ✨𝚂𝚎́𝚛𝚒𝚎 𝚝𝚛𝚎̀𝚜 𝚕𝚒𝚖𝚒𝚝𝚎́𝚎💥. 
     `,
-    image: "/images/Mimosa.jpg",
+    image: process.env.PUBLIC_URL+"/images/Mimosa.jpg",
     date: "2024-01-20",
     category: "Fleurs",
     price: 10
@@ -25,7 +25,7 @@ export const postsCBD = [
       <strong>Bienfaits :</strong><br>
       Soulage les tensions musculaires et favorise la relaxation.
     `,
-    image: "/images/CandyKush.jpg",
+    image: process.env.PUBLIC_URL+"/images/CandyKush.jpg",
     date: "2024-01-18",
     category: "Pollen",
     price: 10
@@ -46,7 +46,7 @@ export const postsCBD = [
       <strong>Bienfaits :</strong><br>
       Soulage les tensions musculaires et favorise la relaxation.
     `,
-    image: "/images/Cigarettes.jpg",
+    image: process.env.PUBLIC_URL+"/images/Cigarettes.jpg",
     date: "2024-01-20",
     category: "Fleurs",
     price: ""
@@ -64,7 +64,7 @@ export const postsCBD = [
       <strong>Bienfaits :</strong><br>
       Soulage les tensions musculaires et favorise la relaxation.
     `,
-    image: "/images/Charras.jpg",
+    image: process.env.PUBLIC_URL +"/images/Charras.jpg",
     date: "2024-01-18",
     category: "Résine",
     price : 10
@@ -80,7 +80,7 @@ export const postsCBD = [
       <br><br/>Concentrée en CBD, notre huile de massage vous apaise et détend votre corps. Issu de la plante de chanvre (cannabis), le CBD, également appelé cannabidiol, est reconnu pour ses nombreux bienfaits relaxants.
       Son délicat parfum d’agrumes et de menthe poivrée vous plongera dans un moment de bien-être et de relaxation. 
     `,
-    image: "/images/huile-massage-cbd.webp",
+    image: process.env.PUBLIC_URL+"/images/huile-massage-cbd.webp",
     date: "2024-01-18",
     category: "Bien-être"
   },

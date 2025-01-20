@@ -9,7 +9,7 @@ export const postsRhums = [
           <br><br/>
           40% d'alcool, 70cl, rhum ambré 
         `,
-        image: "/images/Canerock.webp",
+        image: process.env.PUBLIC_URL+"/images/Canerock.webp",
         date: "2024-01-20",
         category: "Rhum",
         price: 40
@@ -24,7 +24,7 @@ export const postsRhums = [
           <br><br/>
           45% d'alcool, 70cl
         `,
-      image: "/images/Nikka.png",
+      image: process.env.PUBLIC_URL+"/images/Nikka.png",
       date: "2024-01-18",
       category: "Whisky",
       price: 70
@@ -40,7 +40,7 @@ export const postsRhums = [
           <br><br/>
           26% d'alcool, 70cl
         `,
-        image: "/images/JusDor.jpg",
+        image: process.env.PUBLIC_URL+"/images/JusDor.jpg",
         date: "2024-01-18",
         category: "Rhum Arrangé",
         price:40
