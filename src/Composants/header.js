@@ -9,6 +9,7 @@ function Header() {
     const menuItems = [
         { path: '/CBD', label: 'CBD' },
         { path: '/Spiritueux', label: 'Spiritueux' },
+        { path: '/distributeur', label: 'Distributeur' },
         { path: '/Contact', label: 'Contact' },
     ];
 
@@ -20,7 +21,7 @@ function Header() {
                     {/* Logo sans soulignage */}
                     <Link to="/" className="relative">
                         <img 
-                            src={`${process.env.PUBLIC_URL}/images/Logo.jpg`} 
+                            src={`${process.env.PUBLIC_URL}/images/Logo.webp`} 
                             alt="Organiquement Votre Sorigny" 
                             className="h-8 w-8 rounded-full object-cover hover:opacity-80 transition-opacity"
                         />
@@ -58,7 +59,7 @@ function Header() {
                     {/* Logo en version mobile */}
                     <Link to="/">
                         <img 
-                            src={`${process.env.PUBLIC_URL}/images/Logo.jpg`}  
+                            src={`${process.env.PUBLIC_URL}/images/Logo.webp`}  
                             alt="Organiquement Votre Sorigny" 
                             className="h-10 w-10 rounded-full object-cover"
                         />

@@ -73,11 +73,11 @@ const RSVP = ({ showOnlyForm = false }) => {
                             <div className={`${showOnlyForm ? '' : 'min-h-screen'} flex items-center justify-center px-4 py-6 sm:py-8`}>
                                 <div className="Form w-full max-w-2xl bg-white/50 rounded-xl sm:rounded-2xl shadow-xl p-4 sm:p-8 mx-auto">
                                     <div className="text-center mb-6 sm:mb-8">
-                                        <h2 id='contacts' className='text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800 mb-3 sm:mb-4'>
-                                            Ecrivez moi !
+                                        <h2 id='contacts' className='text-2xl sm:text-3xl lg:text-4xl font-bold text-green-600 mb-3 sm:mb-4'>
+                                            N'hésitez pas !
                                         </h2>
                                         <p className='text-sm sm:text-base lg:text-lg text-gray-800 max-w-md mx-auto px-2'>
-                                            Des questions, une envie, ou une commande ? Envoyez moi un mail pour que je vous réponde.
+                                            Des questions, une envie, ou une commande ? Appelez moi au <strong className='text-green-600'>09 70 16 32 55</strong> ou envoyez moi un mail en remplissant le formulaire pour que je vous réponde.
                                         </p>
                                     </div>
 

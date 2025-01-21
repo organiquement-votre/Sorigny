@@ -9,7 +9,7 @@ export const postsCBD = [
       <br><br/>
       ✨𝚂𝚎́𝚛𝚒𝚎 𝚝𝚛𝚎̀𝚜 𝚕𝚒𝚖𝚒𝚝𝚎́𝚎💥. 
     `,
-    image: process.env.PUBLIC_URL+"/images/Mimosa.jpg",
+    image: process.env.PUBLIC_URL+"/images/Mimosa.webp",
     date: "2024-01-20",
     category: "Fleurs",
     price: 10
@@ -25,10 +25,10 @@ export const postsCBD = [
       <strong>Bienfaits :</strong><br>
       Soulage les tensions musculaires et favorise la relaxation.
     `,
-    image: process.env.PUBLIC_URL+"/images/CandyKush.jpg",
+    image: process.env.PUBLIC_URL+"/images/CandyKush.webp",
     date: "2024-01-18",
     category: "Pollen",
-    price: 10
+    price: 8
   },
   {
     id: 3,
@@ -39,17 +39,17 @@ export const postsCBD = [
       <ul style="list-style-type: disc; margin-left: 20px; margin-top: 10px;">
         <li>100% naturelles</li>
         <li>0% Tabac</li>
-        <li>S0% Nicotine</li>
+        <li>0% Nicotine</li>
         <li>20 Cigarettes</li>
       </ul>
       <br><br/>
       <strong>Bienfaits :</strong><br>
       Soulage les tensions musculaires et favorise la relaxation.
     `,
-    image: process.env.PUBLIC_URL+"/images/Cigarettes.jpg",
+    image: process.env.PUBLIC_URL+"/images/Cigarettes.webp",
     date: "2024-01-20",
     category: "Fleurs",
-    price: ""
+    price: "9.90"
   },
   {
     id: 4,
@@ -64,10 +64,10 @@ export const postsCBD = [
       <strong>Bienfaits :</strong><br>
       Soulage les tensions musculaires et favorise la relaxation.
     `,
-    image: process.env.PUBLIC_URL +"/images/Charras.jpg",
+    image: process.env.PUBLIC_URL +"/images/Charras.webp",
     date: "2024-01-18",
     category: "Résine",
-    price : 10
+    price : 8
   },
   {
     id: 5,
@@ -80,9 +80,10 @@ export const postsCBD = [
       <br><br/>Concentrée en CBD, notre huile de massage vous apaise et détend votre corps. Issu de la plante de chanvre (cannabis), le CBD, également appelé cannabidiol, est reconnu pour ses nombreux bienfaits relaxants.
       Son délicat parfum d’agrumes et de menthe poivrée vous plongera dans un moment de bien-être et de relaxation. 
     `,
-    image: process.env.PUBLIC_URL+"/images/huile-massage-cbd.webp",
+    image: process.env.PUBLIC_URL+"/images/huile-de-massage.webp",
     date: "2024-01-18",
-    category: "Bien-être"
+    category: "Bien-être",
+    price:"45.90"
   },
   {
     id: 6,
@@ -92,9 +93,41 @@ export const postsCBD = [
       <strong>Caractéristiques :</strong>
       Laisser infuser 1 à 2 cuillères à café pour 25cl d'eau pendant 8 min. Pour profiter pleinement des bienfaits de cette infusion nous te conseillons d'ajouter un corps gras (lait entier par exemple). 
     `,
-    image: process.env.PUBLIC_URL+"/images/Infusion.jpg",
+    image: process.env.PUBLIC_URL+"/images/Infusion.webp",
     date: "2024-01-18",
     category: "Bien-être",
+    price:"15.90"
+  },
+  {
+    id: 7,
+    title: "Grinder électrique",
+    content: "Facilite toi la vie avec ce grinder XXL",
+    longDescription: `
+      <strong>Caractéristiques :</strong>
+      Le broyeur Groove électrique est un grinder nouvelle génération, qui permet de hacher grossièrement à finement selon vos besoins. Il est vraiment très intéressant pour ceux qui aiment faire des mix de plantes en infusion, les amateurs de café et de cannabis.
+    `,
+    image: process.env.PUBLIC_URL+"/images/Grinder.webp",
+    date: "2024-01-18",
+    category: "Fleurs",
+    price:24.99
+    
+  },
+  {
+    id: 8,
+    title: "Blunt G-Rollz Tropical Pulp",
+    content: "2 Blunt King size sans tabac ni nicotine",
+    longDescription: `
+      <strong>Caractéristiques :</strong>
+      <ul style="list-style-type: disc; margin-left: 20px; margin-top: 10px;">
+        <li> Saveur Tropical Pulp</li>
+        <li>0% Tabac</li>
+        <li>0% Nicotine</li>
+        <li>2 Blunt King size</li>
+      </ul>
+    `,
+    image: process.env.PUBLIC_URL+"/images/Blunt.webp",
+    date: "2024-01-18",
+    category: "Fleurs",
     
   },
   // Ajoutez d'autres produits...

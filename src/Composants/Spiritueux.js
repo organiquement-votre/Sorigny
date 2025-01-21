@@ -27,7 +27,7 @@ const CBD = () => {
           </div>
           ${post.price ? `
           <div class="swal2-product-price" style="font-size: 1.25rem; font-weight: bold; color: #059669;">
-            Prix : ${post.price}€ / gramme
+            Prix : ${post.price}€ 
           </div>
         ` : ''}
         </div>
@@ -93,7 +93,7 @@ const CBD = () => {
             </div>
             
             <div className="p-6">
-              <h2 className="text-2xl font-bold mb-2 title-small"> {/* Ajout de la classe personnalisée */}
+              <h2 className="text-2xl font-bold mb-2 title-small w-[280px]"> {/* Ajout de la classe personnalisée */}
                 {post.title}
               </h2>
               <p className="text-gray-600 text-sm mb-4">

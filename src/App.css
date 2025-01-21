@@ -48,8 +48,3 @@
     font-size: 1.25rem; /* Ajustez la taille selon vos besoins */
   }
 }
-@media (max-width: 360px) {
-  .title-small{
-    font-size: 1.15rem;
-  }
-}
