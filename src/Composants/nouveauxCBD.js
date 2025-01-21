@@ -84,5 +84,18 @@ export const postsCBD = [
     date: "2024-01-18",
     category: "Bien-être"
   },
+  {
+    id: 6,
+    title: "Infusion",
+    content: "Aide à soulager les douleurs menstruelles",
+    longDescription: `
+      <strong>Caractéristiques :</strong>
+      Laisser infuser 1 à 2 cuillères à café pour 25cl d'eau pendant 8 min. Pour profiter pleinement des bienfaits de cette infusion nous te conseillons d'ajouter un corps gras (lait entier par exemple). 
+    `,
+    image: process.env.PUBLIC_URL+"/images/Infusion.jpg",
+    date: "2024-01-18",
+    category: "Bien-être",
+    
+  },
   // Ajoutez d'autres produits...
 ];
