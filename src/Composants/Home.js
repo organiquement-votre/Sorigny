@@ -6,15 +6,15 @@ const Home = () => {
   const slides = [
     {
       image: process.env.PUBLIC_URL + '/images/Magasin.webp',
-      alt:"Sélection de fleurs CBD premium à Organiquement Votre Sorigny"
+      alt: "Sélection de fleurs CBD premium à Organiquement Votre Sorigny"
     },
     {
-      image: process.env.PUBLIC_URL +'/images/Spiritueux.webp',
-      alt:"Sélection de spiritueux premium à Organiquement Votre Sorigny"
+      image: process.env.PUBLIC_URL + '/images/Spiritueux.webp',
+      alt: "Sélection de spiritueux premium à Organiquement Votre Sorigny"
     },
     {
-      image: process.env.PUBLIC_URL +'/images/spiritueux2.webp',
-      alt:"Sélection de produit bien-être premium à Organiquement Votre Sorigny"
+      image: process.env.PUBLIC_URL + '/images/spiritueux2.webp',
+      alt: "Sélection de produit bien-être premium à Organiquement Votre Sorigny"
     }
   ];
 
@@ -24,12 +24,16 @@ const Home = () => {
       
       <section className="mt-4">
         <h1 className="text-3xl font-bold text-gray-900 text-center mb-2">
-        Organiquement Votre Sorigny
+          Organiquement Votre Sorigny
         </h1>
         <h2 className="text-2xl text-center mb-1">
-        Votre boutique de CBD et Spiritueux en Indre-et-Loire
+          Votre boutique de CBD et Spiritueux en Indre-et-Loire
         </h2>
-        <p className='text-xl font-bold text-center text-green-600 mb-2'>09 70 16 32 55</p>
+        <p className="text-xl font-bold text-center text-green-600 mb-2">
+          <Link to="/Contact" className="text-green-600 hover:underline">
+            Un renseignement, une commande ou une question ? Contactez-moi !
+          </Link>
+        </p>
         <div className="grid md:grid-cols-2 gap-8">
           <Link to="/CBD" className="block">
             <div className="bg-gray-200 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">

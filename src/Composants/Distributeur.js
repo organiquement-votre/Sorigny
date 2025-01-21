@@ -26,9 +26,9 @@ const Distributeur = () => {
                       </div>
                     </a>
                   </div>
-        <h2 className="text-2xl font-semibold mb-4">Description</h2>
+        <h2 className="text-2xl font-semibold mb-4">Produits Naturels</h2>
         <p className="text-gray-700 mb-4">
-          Découvrez une sélection de produits CBD de haute qualité, disponibles 24h/24 et 7j/7. 
+          Découvrez une sélection de produits CBD de haute qualité, disponibles <strong className='text-green-600'>24h/24</strong> et <strong className='text-green-600'>7j/7</strong>. 
           Profitez de la commodité d'acheter vos produits préférés à tout moment.
         </p>
         <img 
