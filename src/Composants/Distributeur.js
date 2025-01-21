@@ -26,13 +26,13 @@ const Distributeur = () => {
                       </div>
                     </a>
                   </div>
-        <h2 className="text-2xl font-semibold mb-4">Produits Naturels</h2>
+        <h2 className="text-2xl font-semibold my-4">Produits Naturels</h2>
         <p className="text-gray-700 mb-4">
           Découvrez une sélection de produits CBD de haute qualité, disponibles <strong className='text-green-600'>24h/24</strong> et <strong className='text-green-600'>7j/7</strong>. 
           Profitez de la commodité d'acheter vos produits préférés à tout moment.
         </p>
         <img 
-          src={process.env.PUBLIC_URL + "/images/distributeur.webp"} 
+          src={process.env.PUBLIC_URL + "/images/Distributeur.webp"} 
           alt="Distributeur Automatique de CBD" 
           className="w-full object-contain h-[700px] rounded-lg mt-4"
         />
