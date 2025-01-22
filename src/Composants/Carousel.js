@@ -43,7 +43,7 @@ const Carousel = ({ slides }) => {
           <img
             src={slide.image}
             alt={slide.title}
-            className="absolute w-full h-full object-contain"
+            className="absolute w-full h-full object-cover"
           />
           {/* Overlay texte */}
           <div className="absolute inset-0 bg-white bg-opacity-10 flex flex-col justify-start items-center text-black">
