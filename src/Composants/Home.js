@@ -29,7 +29,7 @@ const Home = () => {
         <h2 className="text-2xl text-center mb-1">
           Votre boutique de CBD et Spiritueux en Indre-et-Loire
         </h2>
-        <p className="text-xl font-bold text-center text-green-600 mb-2">
+        <p className="text-xl font-bold text-center text-green-600 mb-4">
           <Link to="/Contact" className="text-green-600 hover:underline">
             Un renseignement, une commande ou une question ? Contactez-moi !
           </Link>
