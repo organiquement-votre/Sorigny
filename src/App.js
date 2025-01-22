@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './Composants/header.js';
 import Home from './Composants/Home';
 import CBD from './Composants/CBD';
@@ -27,7 +27,6 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/cgv" element={<CGV />} />
             <Route path="/mentions-legales" element={<MentionsLegales />} />
-            {/* Route 404 */}
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
