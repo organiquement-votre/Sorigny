@@ -1,4 +1,4 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Allow: /
-Sitemap: https://organiquement-votre.github.io/Sorigny/sitemap.xml
+Sitemap: https://organiquement-votre.github.io/sorigny/sitemap.xml
