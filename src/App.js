@@ -14,7 +14,7 @@ import Distributeur from './Composants/Distributeur';
 
 function App() {
   return (
-    <Router basename="/sorigny/">
+    <Router>
       <ScrollToTop />
       <div className="flex flex-col min-h-screen bg-gray-100">
         <Navbar />
