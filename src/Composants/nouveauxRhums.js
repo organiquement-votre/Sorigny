@@ -45,20 +45,6 @@ export const postsRhums = [
       category: "Rhum Arrangé",
       price:28
     },
-{
-    id: 4,
-    title: "MIYAGIKYO Single Malt",
-    content: "Découvrez le whisky japonnais NIKKA du 90eme anniversaire de la marque.",
-    longDescription: `
-        <strong>Caractéristiques :</strong>
-         A l’occasion des 90 ans de Nikka Whisky, Miyagikyo Single Malt est présenté dans un étui en édition limitée. Située dans la vallée de Miyagi, une région au nord de l’île de Honshu reconnue pour son air pur et la qualité de ses eaux de source, la distillerie Miyagikyo de Nikka Whisky produit un malt raffiné avec une fraîcheur fruitée et florale immédiatement reconnaissable.
-        <br><br/>
-        45% d'alcool, 70cl
-      `,
-    image: process.env.PUBLIC_URL+"/images/Nikka.webp",
-    date: "2024-01-18",
-    category: "Whisky",
-    price: 70
-  },
+
   // Ajoutez d'autres produits...
 ];

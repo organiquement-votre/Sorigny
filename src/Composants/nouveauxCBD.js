@@ -12,7 +12,7 @@ export const postsCBD = [
     image: process.env.PUBLIC_URL+"/images/Mimosa.webp",
     date: "2024-01-20",
     category: "Fleurs",
-    price: 10
+    price: 8
   },
   {
     id: 2,
@@ -109,7 +109,7 @@ export const postsCBD = [
     image: process.env.PUBLIC_URL+"/images/Grinder.webp",
     date: "2024-01-18",
     category: "Fleurs",
-    price:24.99
+    price:"35.90"
     
   },
   {
